@@ -22,7 +22,7 @@ namespace GameData
         public string GamerTag = string.Empty;
         public string PlayerName = string.Empty;
         public int XP;
-        public Position playerPosition;
+        public Position playerPosition = new Position { };
         public string Password;
 
         public PlayerData() { }
@@ -30,7 +30,7 @@ namespace GameData
         {
             header = messageHeader;
             playerID = id;
-            imageName = ImgName;
+            imageName = ImgName;          
             playerPosition.X = x;
             playerPosition.Y = y;
             GamerTag = tag;
