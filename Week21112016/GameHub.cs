@@ -45,7 +45,7 @@ namespace Week21112016
         public PlayerData JoinPlayer(Position pos)
         {
             PlayerData player = new PlayerData("joined", string.Empty,
-                                Players.Count().ToString(), "Player X", pos.X, pos.Y);
+                                Players.Count().ToString(), "Niall", pos.X, pos.Y);
             Players.Add(player);
             return player;
         }
